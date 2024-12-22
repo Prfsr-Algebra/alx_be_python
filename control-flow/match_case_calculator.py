@@ -1,29 +1,29 @@
-nput("Enter the first number: ")
-num2 = input("Enter the second number: ")
-operation1 = input("Choose the operation (+, -, *, /): ")
+def simple_calculator():
+    # Prompt for user input
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operation = input("Choose the operation (+, -, *, /): ")
 
-try:
-    num1 = float(num1)
-    num2 = float(num2)
-
-    match operation1:
-        case '+':
+    # Perform the calculation using match case
+    match operation:
+        case "+":
             result = num1 + num2
-        case '-':
+            print(f"The result is {result}.")
+        case "-":
             result = num1 - num2
-        case '*':
+            print(f"The result is {result}.")
+        case "*":
             result = num1 * num2
-        case '/':
+            print(f"The result is {result}.")
+        case "/":
             if num2 != 0:
                 result = num1 / num2
+                print(f"The result is {result}.")
             else:
-                raise ZeroDivisionError("Division by zero")
+                print("Cannot divide by zero.")
         case _:
-            raise ValueError("Invalid operation")
+            print("Invalid operation. Please choose +, -, *, or /.")
 
-    print(f"The result is: {result}")
+# Run the calculator
+simple_calculator()
 
-except ValueError as e:
-    print(f"Error: {e}")
-except ZeroDivisionError as e:
-    print(f"Error: {e}")num2 = input("Enter the second number: ")
