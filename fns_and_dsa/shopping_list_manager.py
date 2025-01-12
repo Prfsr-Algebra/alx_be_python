@@ -9,9 +9,8 @@ def display_menu():
         print("4. Exit")
 def main():
     shopping_list = []  # Start with an empty list
-    
+    display_menu()
     while True:
-        display_menu()
         
         # Get user choice
         choice = input("Enter your choice (1-4): ")
