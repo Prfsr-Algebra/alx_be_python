@@ -11,6 +11,7 @@ def main():
     shopping_list = []  # Start with an empty list
     
     while True:
+        display_menu()
         
         # Get user choice
         choice = input("Enter your choice (1-4): ")
