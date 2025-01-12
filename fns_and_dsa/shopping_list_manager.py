@@ -1,15 +1,16 @@
 # shopping_list_manager.py
 
-def shopping_list_manager():
-    shopping_list = []  # Start with an empty list
-    
-    while True:
+def display_menu():
         # Display the menu
         print("\nShopping List Manager")
         print("1. Add item")
         print("2. Remove item")
         print("3. View list")
         print("4. Exit")
+def main():
+    shopping_list = []  # Start with an empty list
+    
+    while True:
         
         # Get user choice
         choice = input("Enter your choice (1-4): ")
