@@ -19,8 +19,8 @@ def main():
     try:
         # Prompt user for input
         temperature = float(input("Enter the temperature: "))
-        scale = input("Specify the scale (C for Celsius, F for Fahrenheit): ").strip().upper()
-        
+        scale = input("Is this temperature in Celsius or Fahrenheit? (C/F):").strip().upper()
+
         # Perform conversion based on the scale
         if scale == 'C':
             converted = convert_to_fahrenheit(temperature)
